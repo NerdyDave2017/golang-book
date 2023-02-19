@@ -30,4 +30,23 @@ func main() {
 		}
 	}
 
+testloop:
+	for ban, con := 25, 0; con <= ban || con > ban; con++ {
+		switch {
+		case con < ban:
+			fmt.Println(con, "is less than", ban)
+		case con == ban:
+			fmt.Println(con, "is equal to", ban)
+		case con > ban:
+			fmt.Println(con, "is greater than", ban)
+			break testloop
+		}
+	}
+
+	type circle struct {
+	}
+
+	type circle1 interface {
+	}
+
 }

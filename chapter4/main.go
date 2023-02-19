@@ -6,6 +6,20 @@ import "fmt"
 var name = "Segun"
 
 func main() {
+
+	var class string
+
+	class = "Golang"
+
+	class = class + " is fun"
+
+	animal := "Dog"
+
+	animal = animal + " is a pet"
+
+	fmt.Println(animal)
+
+	fmt.Println(class)
 	var myStr string = "Hello World"
 	fmt.Println(myStr)
 	var x string
