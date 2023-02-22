@@ -67,8 +67,8 @@ func deferTest() {
 
 func panicRecover() {
 	defer func() {
-		recover()
-		fmt.Println("This is a recover message")
+		str := recover()
+		fmt.Println(str, "This is a recover message")
 	}()
 	panic("Error Message")
 

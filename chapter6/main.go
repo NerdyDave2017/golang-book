@@ -40,6 +40,11 @@ func slices() {
 	slice2 := make([]int, 3)
 	copy(slice2, slice1)
 	fmt.Println(slice1, slice2)
+
+	arr := []float64{23, 12, 25, 52, 84, 83}
+	newArr := arr[0:]
+
+	fmt.Println(newArr)
 }
 
 func maps() {
@@ -72,13 +77,25 @@ func maps() {
 		"He": "Helium",
 	}
 
-	fmt.Println(map2)
+	stateAndCapital := map[string]string{
+		"Abia":    "Umahia",
+		"Adamawa": "Yola",
+	}
 
-	// map3 := map[string]map[string]string{
-	// 	"H": map[string]string{
-	// 		"name":  "Hydrogen",
-	// 		"State": "Gas",
-	// 	},
-	// }
+	fmt.Println(map2)
+	fmt.Println(map2["H"])
+
+	var x map[string]int
+	fmt.Println(x)
+
+	map3 := map[string]map[string]string{
+		"H": {
+			"name":  "Hydrogen",
+			"State": "Gas",
+		},
+	}
+
+	fmt.Println(stateAndCapital)
+	fmt.Println(map3)
 
 }

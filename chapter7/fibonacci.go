@@ -5,7 +5,7 @@ import "fmt"
 // Fibonacci Number
 func main() {
 	fmt.Println(fib(7))
-	fmt.Println(fibSequence(65))
+	fmt.Println(fibSequence(6))
 }
 
 func fib(x int) int {

@@ -13,6 +13,10 @@ func main() {
 	zero(x, y)
 	fmt.Println(x, y, z)
 
+	squarePointer(&x)
+
+	fmt.Println(x)
+
 }
 
 func zero(x, y int) {
@@ -22,4 +26,8 @@ func zero(x, y int) {
 
 func pointerFunc(input *int) {
 	*input = 0
+}
+
+func squarePointer(x *int) {
+	*x = *x * *x
 }
